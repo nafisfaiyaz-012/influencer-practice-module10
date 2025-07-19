@@ -10,7 +10,7 @@
     --primary-color: #3A3A3A;
 }
 
-.common-btn{
+.common-btn {
     height: 44px;
     width: 170px;
     font-weight: 800;
@@ -20,7 +20,12 @@
     border: none;
     border-radius: 41px;
     padding: 10px 0px 10px 24px;
-    
+
+}
+
+main>section {
+    max-width: 1140px;
+    margin: 0 auto;
 }
 
 /* navigation related styles */
@@ -88,17 +93,48 @@
 }
 
 /* sponsor styles */
-.market-container{
+.market-container {
     display: grid;
     grid-template-columns: repeat(7, 1fr);
     padding: 36px 62px;
-    
+
     gap: 60px;
     /* margin-top: 0px auto 0px auto; */
     margin-top: 100px;
     margin-left: 100px;
     max-width: 1140px;
     border: 1px solid rgba(128, 128, 128, 0.075);
+}
+
+/* card styles */
+.popular-collection{
+    margin-top: 100px;
+}
+.popular-collection-title{
+    text-align: center;
+    font-size: 1.75rem;
+    font-weight: 600;
+}
+.card {
+    box-sizing: border-box;
+    /* border: 2px solid red; */
+    width: 100%;
+    padding: 15px;
+    box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.83);
+    -webkit-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.83);
+    -moz-box-shadow: 0px 0px 11px -2px rgba(0, 0, 0, 0.83);
+}
+
+.card-container {
+    width: 1140px;
+    display: grid;
+    grid-template-columns: repeat(3, 330px);
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.product-image {
+    width: 100%;
 }
 
 
@@ -129,20 +165,22 @@
         font-weight: 400;
         font-size: 0.8rem;
     }
-    .market img{
+
+    .market img {
         height: 100%;
         width: 100%;
         justify-items: center;
     }
-    .market-container{
+
+    .market-container {
         border: none;
         height: 100%;
         width: 300px;
-        grid-template-columns: repeat(4,1fr);
-        
+        grid-template-columns: repeat(4, 1fr);
+
         margin: 50px auto 0px auto;
         padding: 0;
         gap: 20px;
     }
-    
+
 }
